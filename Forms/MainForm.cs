@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SGRSalary.Repository.Model;
 
 namespace SGRSalary.Forms
 {
@@ -19,7 +20,9 @@ namespace SGRSalary.Forms
 
         private void فیشحقوقیToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Repository.Repository repo=new Repository.Repository();
+            User u=new User(){Name="z",Family = "m"};
+            repo.AddUser(u);
         }
 
         private void MainForm_Load(object sender, EventArgs e)

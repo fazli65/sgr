@@ -30,7 +30,6 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.تعاریفپایهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ورودفایلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.شرکتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.پرسنلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.نوعبازاریابیToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +40,18 @@
             this.مسئولمنطقهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.نامتجهیزاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.نوعتکلیفیToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.مدلدستگاهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.عملیاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.تولیدلیستحقوقToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ورودفایلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.گزارشاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.فیشحقوقیToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.لیستحقوقیToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.پروژهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.نوعکسوراتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ثبتکسوراتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.شهرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +59,9 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.تعاریفپایهToolStripMenuItem,
-            this.ورودفایلToolStripMenuItem});
+            this.عملیاتToolStripMenuItem,
+            this.ورودفایلToolStripMenuItem,
+            this.گزارشاتToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -59,6 +72,7 @@
             // 
             this.تعاریفپایهToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.شرکتToolStripMenuItem,
+            this.پروژهToolStripMenuItem,
             this.پرسنلToolStripMenuItem,
             this.نوعبازاریابیToolStripMenuItem,
             this.وضعیتToolStripMenuItem,
@@ -67,22 +81,20 @@
             this.صنفToolStripMenuItem,
             this.مسئولمنطقهToolStripMenuItem,
             this.نامتجهیزاتToolStripMenuItem,
-            this.نوعتکلیفیToolStripMenuItem});
+            this.نوعتکلیفیToolStripMenuItem,
+            this.مدلدستگاهToolStripMenuItem,
+            this.نوعکسوراتToolStripMenuItem,
+            this.شهرToolStripMenuItem});
             this.تعاریفپایهToolStripMenuItem.Name = "تعاریفپایهToolStripMenuItem";
             this.تعاریفپایهToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.تعاریفپایهToolStripMenuItem.Text = "تعاریف پایه";
-            // 
-            // ورودفایلToolStripMenuItem
-            // 
-            this.ورودفایلToolStripMenuItem.Name = "ورودفایلToolStripMenuItem";
-            this.ورودفایلToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.ورودفایلToolStripMenuItem.Text = "ورود فایل";
             // 
             // شرکتToolStripMenuItem
             // 
             this.شرکتToolStripMenuItem.Name = "شرکتToolStripMenuItem";
             this.شرکتToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.شرکتToolStripMenuItem.Text = "شرکت";
+            this.شرکتToolStripMenuItem.Click += new System.EventHandler(this.شرکتToolStripMenuItem_Click);
             // 
             // پرسنلToolStripMenuItem
             // 
@@ -138,6 +150,88 @@
             this.نوعتکلیفیToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.نوعتکلیفیToolStripMenuItem.Text = "نوع تکلیفی";
             // 
+            // مدلدستگاهToolStripMenuItem
+            // 
+            this.مدلدستگاهToolStripMenuItem.Name = "مدلدستگاهToolStripMenuItem";
+            this.مدلدستگاهToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.مدلدستگاهToolStripMenuItem.Text = "مدل دستگاه";
+            // 
+            // عملیاتToolStripMenuItem
+            // 
+            this.عملیاتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.تولیدلیستحقوقToolStripMenuItem,
+            this.ثبتکسوراتToolStripMenuItem});
+            this.عملیاتToolStripMenuItem.Name = "عملیاتToolStripMenuItem";
+            this.عملیاتToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.عملیاتToolStripMenuItem.Text = "عملیات";
+            // 
+            // تولیدلیستحقوقToolStripMenuItem
+            // 
+            this.تولیدلیستحقوقToolStripMenuItem.Name = "تولیدلیستحقوقToolStripMenuItem";
+            this.تولیدلیستحقوقToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.تولیدلیستحقوقToolStripMenuItem.Text = "تولید لیست حقوق";
+            // 
+            // ورودفایلToolStripMenuItem
+            // 
+            this.ورودفایلToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pMToolStripMenuItem});
+            this.ورودفایلToolStripMenuItem.Name = "ورودفایلToolStripMenuItem";
+            this.ورودفایلToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.ورودفایلToolStripMenuItem.Text = "ورود فایل";
+            // 
+            // pMToolStripMenuItem
+            // 
+            this.pMToolStripMenuItem.Name = "pMToolStripMenuItem";
+            this.pMToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pMToolStripMenuItem.Text = "ورود اطلاعات اولیه";
+            this.pMToolStripMenuItem.Click += new System.EventHandler(this.pMToolStripMenuItem_Click);
+            // 
+            // گزارشاتToolStripMenuItem
+            // 
+            this.گزارشاتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.فیشحقوقیToolStripMenuItem,
+            this.لیستحقوقیToolStripMenuItem});
+            this.گزارشاتToolStripMenuItem.Name = "گزارشاتToolStripMenuItem";
+            this.گزارشاتToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.گزارشاتToolStripMenuItem.Text = "گزارشات";
+            // 
+            // فیشحقوقیToolStripMenuItem
+            // 
+            this.فیشحقوقیToolStripMenuItem.Name = "فیشحقوقیToolStripMenuItem";
+            this.فیشحقوقیToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.فیشحقوقیToolStripMenuItem.Text = "فیش حقوق";
+            this.فیشحقوقیToolStripMenuItem.Click += new System.EventHandler(this.فیشحقوقیToolStripMenuItem_Click);
+            // 
+            // لیستحقوقیToolStripMenuItem
+            // 
+            this.لیستحقوقیToolStripMenuItem.Name = "لیستحقوقیToolStripMenuItem";
+            this.لیستحقوقیToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.لیستحقوقیToolStripMenuItem.Text = "لیست حقوق";
+            // 
+            // پروژهToolStripMenuItem
+            // 
+            this.پروژهToolStripMenuItem.Name = "پروژهToolStripMenuItem";
+            this.پروژهToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.پروژهToolStripMenuItem.Text = "پروژه";
+            // 
+            // نوعکسوراتToolStripMenuItem
+            // 
+            this.نوعکسوراتToolStripMenuItem.Name = "نوعکسوراتToolStripMenuItem";
+            this.نوعکسوراتToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.نوعکسوراتToolStripMenuItem.Text = "نوع کسورات";
+            // 
+            // ثبتکسوراتToolStripMenuItem
+            // 
+            this.ثبتکسوراتToolStripMenuItem.Name = "ثبتکسوراتToolStripMenuItem";
+            this.ثبتکسوراتToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ثبتکسوراتToolStripMenuItem.Text = "ثبت کسورات";
+            // 
+            // شهرToolStripMenuItem
+            // 
+            this.شهرToolStripMenuItem.Name = "شهرToolStripMenuItem";
+            this.شهرToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.شهرToolStripMenuItem.Text = "شهر";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,6 +242,7 @@
             this.Name = "MainForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -170,5 +265,16 @@
         private System.Windows.Forms.ToolStripMenuItem نامتجهیزاتToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem نوعتکلیفیToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ورودفایلToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pMToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem گزارشاتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem فیشحقوقیToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem لیستحقوقیToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem عملیاتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem تولیدلیستحقوقToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem مدلدستگاهToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem پروژهToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem نوعکسوراتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ثبتکسوراتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem شهرToolStripMenuItem;
     }
 }

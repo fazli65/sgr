@@ -31,5 +31,10 @@ namespace SGRSalary.Forms
         {
 
         }
+
+        private void pMToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

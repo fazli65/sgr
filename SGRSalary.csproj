@@ -50,17 +50,89 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\frmCompany.cs">
+    <Compile Include="Forms\BIform\frmBank.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmCompany.Designer.cs">
+    <Compile Include="Forms\BIform\frmBank.Designer.cs">
+      <DependentUpon>frmBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmBazar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmBazar.Designer.cs">
+      <DependentUpon>frmBazar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmCity.Designer.cs">
+      <DependentUpon>frmCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmCompany.Designer.cs">
       <DependentUpon>frmCompany.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmPersonel.cs">
+    <Compile Include="Forms\BIform\frmCondition.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmPersonel.Designer.cs">
+    <Compile Include="Forms\BIform\frmCondition.Designer.cs">
+      <DependentUpon>frmCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmDeductions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmDeductions.Designer.cs">
+      <DependentUpon>frmDeductions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmEquipment.Designer.cs">
+      <DependentUpon>frmEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmLocate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmLocate.Designer.cs">
+      <DependentUpon>frmLocate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmModel.Designer.cs">
+      <DependentUpon>frmModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmPersonel.Designer.cs">
       <DependentUpon>frmPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmProject.Designer.cs">
+      <DependentUpon>frmProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmSenf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmSenf.Designer.cs">
+      <DependentUpon>frmSenf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmSuperviser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmSuperviser.Designer.cs">
+      <DependentUpon>frmSuperviser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BIform\frmTaklifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BIform\frmTaklifi.Designer.cs">
+      <DependentUpon>frmTaklifi.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -68,16 +140,70 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\OPform\frmDataentery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OPform\frmDataentery.Designer.cs">
+      <DependentUpon>frmDataentery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OPform\frmOPDeductions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OPform\frmOPDeductions.Designer.cs">
+      <DependentUpon>frmOPDeductions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\frmCompany.resx">
+    <EmbeddedResource Include="Forms\BIform\frmBank.resx">
+      <DependentUpon>frmBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmBazar.resx">
+      <DependentUpon>frmBazar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmCity.resx">
+      <DependentUpon>frmCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmCompany.resx">
       <DependentUpon>frmCompany.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmPersonel.resx">
+    <EmbeddedResource Include="Forms\BIform\frmCondition.resx">
+      <DependentUpon>frmCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmDeductions.resx">
+      <DependentUpon>frmDeductions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmEquipment.resx">
+      <DependentUpon>frmEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmLocate.resx">
+      <DependentUpon>frmLocate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmModel.resx">
+      <DependentUpon>frmModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmPersonel.resx">
       <DependentUpon>frmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmProject.resx">
+      <DependentUpon>frmProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmSenf.resx">
+      <DependentUpon>frmSenf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmSuperviser.resx">
+      <DependentUpon>frmSuperviser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BIform\frmTaklifi.resx">
+      <DependentUpon>frmTaklifi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OPform\frmDataentery.resx">
+      <DependentUpon>frmDataentery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OPform\frmOPDeductions.resx">
+      <DependentUpon>frmOPDeductions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

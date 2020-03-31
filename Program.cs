@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SGRSalary.Forms;
+using SGRSalary.Forms.OPform;
 
 namespace SGRSalary
 {
@@ -17,7 +18,7 @@ namespace SGRSalary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new frmDataentery());
         }
     }
 }

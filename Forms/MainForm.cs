@@ -21,8 +21,8 @@ namespace SGRSalary.Forms
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            RepositorySgr repo = new RepositorySgr();
-            var p = repo.GetPersons();
+            //RepositorySgr repo = new RepositorySgr();
+            //var p = repo.GetPersons();
         }
 
     }

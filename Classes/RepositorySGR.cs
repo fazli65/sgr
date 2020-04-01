@@ -75,12 +75,13 @@ namespace SGRSalary.Repository
         }
         public List<BI_Personel> GetPersons()
         {
-            string cmd = $@"select per.*,com.Name compony,pro.Name project,cit.Name city from 
-                            [dbo].[BI_Personel] per
-                            inner join BI_Company com on per.Company_ID=com.Company_ID
-                            inner join BI_Project pro  on per.Project_ID=pro.Project_ID
-                            inner join BI_City cit on cit.City_ID=per.City_ID";
-           return cnt.Database.SqlQuery<BI_Personel>(cmd).ToList();
+            return cnt.BI_Personel.Include(x => x.BI_Company).Include(x => x.BI_Project).Include(x => x.BI_City).ToList();
+           // string cmd = $@"select per.*,com.Name compony,pro.Name project,cit.Name city from 
+           //                 [dbo].[BI_Personel] per
+           //                 inner join BI_Company com on per.Company_ID=com.Company_ID
+           //                 inner join BI_Project pro  on per.Project_ID=pro.Project_ID
+           //                 inner join BI_City cit on cit.City_ID=per.City_ID";
+           //return cnt.Database.SqlQuery<BI_Personel>(cmd).ToList();
         }
         public BI_Personel GetPersonsByID(Int64 personID)
         {

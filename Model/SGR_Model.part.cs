@@ -8,9 +8,9 @@ namespace SGRSalary.Model
 {
     public partial class BI_Personel
     {
-        public string compony { get; set; }
-        public string project { get; set; }
-        public string city { get; set; }
+        public string compony {get { return BI_Company?.Name; }}
+        public string project { get { return BI_Project?.Name; } }
+        public string city { get { return BI_City?.Name; } }
 
     }
 }

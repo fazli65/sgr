@@ -25,6 +25,19 @@ namespace SGRSalary.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<BI_Bank> BI_Bank { get; set; }
+        public virtual DbSet<BI_Bazar> BI_Bazar { get; set; }
+        public virtual DbSet<BI_City> BI_City { get; set; }
+        public virtual DbSet<BI_Company> BI_Company { get; set; }
+        public virtual DbSet<BI_Condition> BI_Condition { get; set; }
+        public virtual DbSet<BI_Deductions> BI_Deductions { get; set; }
+        public virtual DbSet<BI_Equipment> BI_Equipment { get; set; }
+        public virtual DbSet<BI_Locate> BI_Locate { get; set; }
+        public virtual DbSet<BI_Model> BI_Model { get; set; }
+        public virtual DbSet<BI_Personel> BI_Personel { get; set; }
+        public virtual DbSet<BI_Project> BI_Project { get; set; }
+        public virtual DbSet<BI_Senf> BI_Senf { get; set; }
+        public virtual DbSet<BI_Superviser> BI_Superviser { get; set; }
+        public virtual DbSet<BI_Taklifi> BI_Taklifi { get; set; }
     }
 }

@@ -12,10 +12,14 @@ namespace SGRSalary.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class BI_Condition
     {
-        public long User_ID { get; set; }
+        public long Condition_ID { get; set; }
         public string Name { get; set; }
-        public string Family { get; set; }
+        public long Entitycode { get; set; }
+        public long CreateUserID { get; set; }
+        public System.DateTime CreateDate { get; set; }
+        public Nullable<long> UpdateUserID { get; set; }
+        public Nullable<System.DateTime> UpdateDate { get; set; }
     }
 }

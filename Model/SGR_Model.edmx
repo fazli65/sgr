@@ -4,46 +4,733 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SGR_SALARYModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Users">
+    <Schema Namespace="SGR_SALARYModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BI_Bank">
           <Key>
-            <PropertyRef Name="User_ID" />
+            <PropertyRef Name="Bank_ID" />
           </Key>
-          <Property Name="User_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="varchar" MaxLength="200" Nullable="false" />
-          <Property Name="Family" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Bank_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
         </EntityType>
+        <EntityType Name="BI_Bazar">
+          <Key>
+            <PropertyRef Name="Bazar_ID" />
+          </Key>
+          <Property Name="Bazar_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_City">
+          <Key>
+            <PropertyRef Name="City_ID" />
+          </Key>
+          <Property Name="City_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Company">
+          <Key>
+            <PropertyRef Name="Company_ID" />
+          </Key>
+          <Property Name="Company_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Condition">
+          <Key>
+            <PropertyRef Name="Condition_ID" />
+          </Key>
+          <Property Name="Condition_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Deductions">
+          <Key>
+            <PropertyRef Name="Deductions_ID" />
+          </Key>
+          <Property Name="Deductions_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Equipment">
+          <Key>
+            <PropertyRef Name="Equipment_ID" />
+          </Key>
+          <Property Name="Equipment_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Locate">
+          <Key>
+            <PropertyRef Name="Locate_ID" />
+          </Key>
+          <Property Name="Locate_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Model">
+          <Key>
+            <PropertyRef Name="Model_ID" />
+          </Key>
+          <Property Name="Model_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Personel">
+          <Key>
+            <PropertyRef Name="Personel_ID" />
+          </Key>
+          <Property Name="Personel_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="LastName" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="PersoneliCode" Type="bigint" />
+          <Property Name="NationalCode" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Company_ID" Type="bigint" Nullable="false" />
+          <Property Name="Project_ID" Type="bigint" Nullable="false" />
+          <Property Name="City_ID" Type="bigint" Nullable="false" />
+          <Property Name="CreditCard" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="AccountNumber" Type="nchar" MaxLength="100" />
+          <Property Name="CardNumber" Type="nchar" MaxLength="16" />
+          <Property Name="ValidBoss" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="FixMoney" Type="bigint" />
+          <Property Name="Station" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Project">
+          <Key>
+            <PropertyRef Name="Project_ID" />
+          </Key>
+          <Property Name="Project_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Senf">
+          <Key>
+            <PropertyRef Name="Senf_ID" />
+          </Key>
+          <Property Name="Senf_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Superviser">
+          <Key>
+            <PropertyRef Name="Superviser_ID" />
+          </Key>
+          <Property Name="Superviser_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BI_Taklifi">
+          <Key>
+            <PropertyRef Name="Taklifi_ID" />
+          </Key>
+          <Property Name="Taklifi_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Entitycode" Type="bigint" Nullable="false" />
+          <Property Name="CreateUserID" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="UpdateUserID" Type="bigint" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_BI_Company_BI_Company">
+          <End Role="BI_Company" Type="Self.BI_Company" Multiplicity="1" />
+          <End Role="BI_Company1" Type="Self.BI_Company" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BI_Company">
+              <PropertyRef Name="Company_ID" />
+            </Principal>
+            <Dependent Role="BI_Company1">
+              <PropertyRef Name="Company_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BI_Personel_BI_City">
+          <End Role="BI_City" Type="Self.BI_City" Multiplicity="1" />
+          <End Role="BI_Personel" Type="Self.BI_Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BI_City">
+              <PropertyRef Name="City_ID" />
+            </Principal>
+            <Dependent Role="BI_Personel">
+              <PropertyRef Name="City_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BI_Personel_BI_Company">
+          <End Role="BI_Company" Type="Self.BI_Company" Multiplicity="1" />
+          <End Role="BI_Personel" Type="Self.BI_Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BI_Company">
+              <PropertyRef Name="Company_ID" />
+            </Principal>
+            <Dependent Role="BI_Personel">
+              <PropertyRef Name="Company_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BI_Personel_BI_Project">
+          <End Role="BI_Project" Type="Self.BI_Project" Multiplicity="1" />
+          <End Role="BI_Personel" Type="Self.BI_Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BI_Project">
+              <PropertyRef Name="Project_ID" />
+            </Principal>
+            <Dependent Role="BI_Personel">
+              <PropertyRef Name="Project_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="SGR_SALARYModelStoreContainer">
-          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Bank" EntityType="Self.BI_Bank" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Bazar" EntityType="Self.BI_Bazar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_City" EntityType="Self.BI_City" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Company" EntityType="Self.BI_Company" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Condition" EntityType="Self.BI_Condition" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Deductions" EntityType="Self.BI_Deductions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Equipment" EntityType="Self.BI_Equipment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Locate" EntityType="Self.BI_Locate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Model" EntityType="Self.BI_Model" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Personel" EntityType="Self.BI_Personel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Project" EntityType="Self.BI_Project" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Senf" EntityType="Self.BI_Senf" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Superviser" EntityType="Self.BI_Superviser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BI_Taklifi" EntityType="Self.BI_Taklifi" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_BI_Company_BI_Company" Association="Self.FK_BI_Company_BI_Company">
+            <End Role="BI_Company" EntitySet="BI_Company" />
+            <End Role="BI_Company1" EntitySet="BI_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BI_Personel_BI_City" Association="Self.FK_BI_Personel_BI_City">
+            <End Role="BI_City" EntitySet="BI_City" />
+            <End Role="BI_Personel" EntitySet="BI_Personel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BI_Personel_BI_Company" Association="Self.FK_BI_Personel_BI_Company">
+            <End Role="BI_Company" EntitySet="BI_Company" />
+            <End Role="BI_Personel" EntitySet="BI_Personel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BI_Personel_BI_Project" Association="Self.FK_BI_Personel_BI_Project">
+            <End Role="BI_Project" EntitySet="BI_Project" />
+            <End Role="BI_Personel" EntitySet="BI_Personel" />
+          </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SGR_SALARYModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="User">
-          <Key>
-            <PropertyRef Name="User_ID" />
-          </Key>
-          <Property Name="User_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Family" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
         <EntityContainer Name="SGR_SALARYEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="BI_Bank" EntityType="SGR_SALARYModel.BI_Bank" />
+          <EntitySet Name="BI_Bazar" EntityType="SGR_SALARYModel.BI_Bazar" />
+          <EntitySet Name="BI_City" EntityType="SGR_SALARYModel.BI_City" />
+          <EntitySet Name="BI_Company" EntityType="SGR_SALARYModel.BI_Company" />
+          <EntitySet Name="BI_Condition" EntityType="SGR_SALARYModel.BI_Condition" />
+          <EntitySet Name="BI_Deductions" EntityType="SGR_SALARYModel.BI_Deductions" />
+          <EntitySet Name="BI_Equipment" EntityType="SGR_SALARYModel.BI_Equipment" />
+          <EntitySet Name="BI_Locate" EntityType="SGR_SALARYModel.BI_Locate" />
+          <EntitySet Name="BI_Model" EntityType="SGR_SALARYModel.BI_Model" />
+          <EntitySet Name="BI_Personel" EntityType="SGR_SALARYModel.BI_Personel" />
+          <EntitySet Name="BI_Project" EntityType="SGR_SALARYModel.BI_Project" />
+          <EntitySet Name="BI_Senf" EntityType="SGR_SALARYModel.BI_Senf" />
+          <EntitySet Name="BI_Superviser" EntityType="SGR_SALARYModel.BI_Superviser" />
+          <EntitySet Name="BI_Taklifi" EntityType="SGR_SALARYModel.BI_Taklifi" />
+          <AssociationSet Name="FK_BI_Personel_BI_City" Association="SGR_SALARYModel.FK_BI_Personel_BI_City">
+            <End Role="BI_City" EntitySet="BI_City" />
+            <End Role="BI_Personel" EntitySet="BI_Personel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BI_Company_BI_Company" Association="SGR_SALARYModel.FK_BI_Company_BI_Company">
+            <End Role="BI_Company" EntitySet="BI_Company" />
+            <End Role="BI_Company1" EntitySet="BI_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BI_Personel_BI_Company" Association="SGR_SALARYModel.FK_BI_Personel_BI_Company">
+            <End Role="BI_Company" EntitySet="BI_Company" />
+            <End Role="BI_Personel" EntitySet="BI_Personel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BI_Personel_BI_Project" Association="SGR_SALARYModel.FK_BI_Personel_BI_Project">
+            <End Role="BI_Project" EntitySet="BI_Project" />
+            <End Role="BI_Personel" EntitySet="BI_Personel" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="BI_Bank">
+          <Key>
+            <PropertyRef Name="Bank_ID" />
+          </Key>
+          <Property Name="Bank_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BI_Bazar">
+          <Key>
+            <PropertyRef Name="Bazar_ID" />
+          </Key>
+          <Property Name="Bazar_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BI_City">
+          <Key>
+            <PropertyRef Name="City_ID" />
+          </Key>
+          <Property Name="City_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="BI_Personel" Relationship="SGR_SALARYModel.FK_BI_Personel_BI_City" FromRole="BI_City" ToRole="BI_Personel" />
+        </EntityType>
+        <EntityType Name="BI_Company">
+          <Key>
+            <PropertyRef Name="Company_ID" />
+          </Key>
+          <Property Name="Company_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="BI_Company1" Relationship="SGR_SALARYModel.FK_BI_Company_BI_Company" FromRole="BI_Company" ToRole="BI_Company1" />
+          <NavigationProperty Name="BI_Company2" Relationship="SGR_SALARYModel.FK_BI_Company_BI_Company" FromRole="BI_Company1" ToRole="BI_Company" />
+          <NavigationProperty Name="BI_Personel" Relationship="SGR_SALARYModel.FK_BI_Personel_BI_Company" FromRole="BI_Company" ToRole="BI_Personel" />
+        </EntityType>
+        <EntityType Name="BI_Condition">
+          <Key>
+            <PropertyRef Name="Condition_ID" />
+          </Key>
+          <Property Name="Condition_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BI_Deductions">
+          <Key>
+            <PropertyRef Name="Deductions_ID" />
+          </Key>
+          <Property Name="Deductions_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BI_Equipment">
+          <Key>
+            <PropertyRef Name="Equipment_ID" />
+          </Key>
+          <Property Name="Equipment_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BI_Locate">
+          <Key>
+            <PropertyRef Name="Locate_ID" />
+          </Key>
+          <Property Name="Locate_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BI_Model">
+          <Key>
+            <PropertyRef Name="Model_ID" />
+          </Key>
+          <Property Name="Model_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BI_Personel">
+          <Key>
+            <PropertyRef Name="Personel_ID" />
+          </Key>
+          <Property Name="Personel_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="PersoneliCode" Type="Int64" />
+          <Property Name="NationalCode" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Company_ID" Type="Int64" Nullable="false" />
+          <Property Name="Project_ID" Type="Int64" Nullable="false" />
+          <Property Name="City_ID" Type="Int64" Nullable="false" />
+          <Property Name="CreditCard" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="AccountNumber" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="CardNumber" Type="String" MaxLength="16" FixedLength="true" Unicode="true" />
+          <Property Name="ValidBoss" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="FixMoney" Type="Int64" />
+          <Property Name="Station" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="BI_City" Relationship="SGR_SALARYModel.FK_BI_Personel_BI_City" FromRole="BI_Personel" ToRole="BI_City" />
+          <NavigationProperty Name="BI_Company" Relationship="SGR_SALARYModel.FK_BI_Personel_BI_Company" FromRole="BI_Personel" ToRole="BI_Company" />
+          <NavigationProperty Name="BI_Project" Relationship="SGR_SALARYModel.FK_BI_Personel_BI_Project" FromRole="BI_Personel" ToRole="BI_Project" />
+        </EntityType>
+        <EntityType Name="BI_Project">
+          <Key>
+            <PropertyRef Name="Project_ID" />
+          </Key>
+          <Property Name="Project_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="BI_Personel" Relationship="SGR_SALARYModel.FK_BI_Personel_BI_Project" FromRole="BI_Project" ToRole="BI_Personel" />
+        </EntityType>
+        <EntityType Name="BI_Senf">
+          <Key>
+            <PropertyRef Name="Senf_ID" />
+          </Key>
+          <Property Name="Senf_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BI_Superviser">
+          <Key>
+            <PropertyRef Name="Superviser_ID" />
+          </Key>
+          <Property Name="Superviser_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="BI_Taklifi">
+          <Key>
+            <PropertyRef Name="Taklifi_ID" />
+          </Key>
+          <Property Name="Taklifi_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Entitycode" Type="Int64" Nullable="false" />
+          <Property Name="CreateUserID" Type="Int64" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdateUserID" Type="Int64" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <Association Name="FK_BI_Personel_BI_City">
+          <End Type="SGR_SALARYModel.BI_City" Role="BI_City" Multiplicity="1" />
+          <End Type="SGR_SALARYModel.BI_Personel" Role="BI_Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BI_City">
+              <PropertyRef Name="City_ID" />
+            </Principal>
+            <Dependent Role="BI_Personel">
+              <PropertyRef Name="City_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BI_Company_BI_Company">
+          <End Type="SGR_SALARYModel.BI_Company" Role="BI_Company" Multiplicity="1" />
+          <End Type="SGR_SALARYModel.BI_Company" Role="BI_Company1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BI_Company">
+              <PropertyRef Name="Company_ID" />
+            </Principal>
+            <Dependent Role="BI_Company1">
+              <PropertyRef Name="Company_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BI_Personel_BI_Company">
+          <End Type="SGR_SALARYModel.BI_Company" Role="BI_Company" Multiplicity="1" />
+          <End Type="SGR_SALARYModel.BI_Personel" Role="BI_Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BI_Company">
+              <PropertyRef Name="Company_ID" />
+            </Principal>
+            <Dependent Role="BI_Personel">
+              <PropertyRef Name="Company_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BI_Personel_BI_Project">
+          <End Type="SGR_SALARYModel.BI_Project" Role="BI_Project" Multiplicity="1" />
+          <End Type="SGR_SALARYModel.BI_Personel" Role="BI_Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BI_Project">
+              <PropertyRef Name="Project_ID" />
+            </Principal>
+            <Dependent Role="BI_Personel">
+              <PropertyRef Name="Project_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="SGR_SALARYModelStoreContainer" CdmEntityContainer="SGR_SALARYEntities">
-          <EntitySetMapping Name="Users">
-            <EntityTypeMapping TypeName="SGR_SALARYModel.User">
-              <MappingFragment StoreEntitySet="Users">
-                <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+        <EntitySetMapping Name="BI_Bank">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Bank">
+              <MappingFragment StoreEntitySet="BI_Bank">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Family" ColumnName="Family" />
+                <ScalarProperty Name="Bank_ID" ColumnName="Bank_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Bazar">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Bazar">
+              <MappingFragment StoreEntitySet="BI_Bazar">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Bazar_ID" ColumnName="Bazar_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_City">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_City">
+              <MappingFragment StoreEntitySet="BI_City">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="City_ID" ColumnName="City_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Company">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Company">
+              <MappingFragment StoreEntitySet="BI_Company">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Company_ID" ColumnName="Company_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Condition">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Condition">
+              <MappingFragment StoreEntitySet="BI_Condition">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Condition_ID" ColumnName="Condition_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Deductions">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Deductions">
+              <MappingFragment StoreEntitySet="BI_Deductions">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Deductions_ID" ColumnName="Deductions_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Equipment">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Equipment">
+              <MappingFragment StoreEntitySet="BI_Equipment">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Equipment_ID" ColumnName="Equipment_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Locate">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Locate">
+              <MappingFragment StoreEntitySet="BI_Locate">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Locate_ID" ColumnName="Locate_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Model">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Model">
+              <MappingFragment StoreEntitySet="BI_Model">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Model_ID" ColumnName="Model_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Personel">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Personel">
+              <MappingFragment StoreEntitySet="BI_Personel">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Station" ColumnName="Station" />
+                <ScalarProperty Name="FixMoney" ColumnName="FixMoney" />
+                <ScalarProperty Name="ValidBoss" ColumnName="ValidBoss" />
+                <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+                <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+                <ScalarProperty Name="CreditCard" ColumnName="CreditCard" />
+                <ScalarProperty Name="City_ID" ColumnName="City_ID" />
+                <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+                <ScalarProperty Name="Company_ID" ColumnName="Company_ID" />
+                <ScalarProperty Name="NationalCode" ColumnName="NationalCode" />
+                <ScalarProperty Name="PersoneliCode" ColumnName="PersoneliCode" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Personel_ID" ColumnName="Personel_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Project">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Project">
+              <MappingFragment StoreEntitySet="BI_Project">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Senf">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Senf">
+              <MappingFragment StoreEntitySet="BI_Senf">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Senf_ID" ColumnName="Senf_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Superviser">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Superviser">
+              <MappingFragment StoreEntitySet="BI_Superviser">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Superviser_ID" ColumnName="Superviser_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BI_Taklifi">
+            <EntityTypeMapping TypeName="SGR_SALARYModel.BI_Taklifi">
+              <MappingFragment StoreEntitySet="BI_Taklifi">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateUserID" ColumnName="UpdateUserID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+                <ScalarProperty Name="Entitycode" ColumnName="Entitycode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Taklifi_ID" ColumnName="Taklifi_ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

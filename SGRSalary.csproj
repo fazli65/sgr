@@ -189,6 +189,48 @@
     <Compile Include="Forms\OPform\frmOPDeductions.Designer.cs">
       <DependentUpon>frmOPDeductions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\BI_Bank.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Bazar.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_City.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Company.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Condition.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Deductions.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Equipment.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Locate.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Model.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Personel.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Project.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Senf.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Superviser.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BI_Taklifi.cs">
+      <DependentUpon>SGR_Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\SGR_Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -205,9 +247,6 @@
       <DependentUpon>SGR_Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Model\SGR_Model.part.cs" />
-    <Compile Include="Model\User.cs">
-      <DependentUpon>SGR_Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\BIform\BaseForm.resx">

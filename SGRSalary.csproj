@@ -78,6 +78,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BaseRepository.cs" />
     <Compile Include="Classes\ExcelOprations.cs" />
     <Compile Include="Classes\Extention.cs" />
     <Compile Include="Classes\Repository.cs" />

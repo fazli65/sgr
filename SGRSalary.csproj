@@ -263,6 +263,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Model\SGR_Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -297,6 +298,8 @@
       <DependentUpon>SGR_Model.edmx</DependentUpon>
       <LastGenOutput>SGR_Model.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\company2.png" />
+    <None Include="Resources\company.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

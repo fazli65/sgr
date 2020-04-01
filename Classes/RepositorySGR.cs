@@ -94,5 +94,105 @@ namespace SGRSalary.Repository
             cnt.SaveChanges();
         }
         #endregion
+        
+        #region BI_City
+        public void AddBank(BI_City city)
+        {
+            cnt.BI_City.Add(city);
+            cnt.SaveChanges();
+        }
+        public List<BI_City> GetCitys()
+        {
+            return cnt.BI_City.ToList();
+        }
+        public BI_City GetCitysByID(Int64 cityID)
+        {
+            return cnt.BI_City.FirstOrDefault(x => x.City_ID == cityID);
+        }
+        public void SaveCity()
+        {
+            cnt.SaveChanges();
+        }
+        public void DeleteCity(BI_City city)
+        {
+            cnt.BI_City.Remove(city);
+            cnt.SaveChanges();
+        }
+        #endregion
+
+        #region BI_Company
+        public void AddCompony(BI_Company compony)
+        {
+            cnt.BI_Company.Add(compony);
+            cnt.SaveChanges();
+        }
+        public List<BI_Company> GetComponys()
+        {
+            return cnt.BI_Company.ToList();
+        }
+        public BI_Company GetComponyByID(Int64 ComponyID)
+        {
+            return cnt.BI_Company.FirstOrDefault(x => x.Company_ID == ComponyID);
+        }
+        public void SaveCompony()
+        {
+            cnt.SaveChanges();
+        }
+        public void DeleteCompony(BI_Company compony)
+        {
+            cnt.BI_Company.Remove(compony);
+            cnt.SaveChanges();
+        }
+        #endregion
+
+        #region BI_Condition
+        public void AddCondition(BI_Condition condition)
+        {
+            cnt.BI_Condition.Add(condition);
+            cnt.SaveChanges();
+        }
+        public List<BI_Condition> GetConditions()
+        {
+            return cnt.BI_Condition.ToList();
+        }
+        public BI_Condition GetConditionByID(Int64 conditionID)
+        {
+            return cnt.BI_Condition.FirstOrDefault(x => x.Condition_ID == conditionID);
+        }
+        public void SaveCondition()
+        {
+            cnt.SaveChanges();
+        }
+        public void DeleteCondition(BI_Condition condition)
+        {
+            cnt.BI_Condition.Remove(condition);
+            cnt.SaveChanges();
+        }
+        #endregion
+
+        #region BI_Deductions
+        public void AddDeduction(BI_Deductions deduction)
+        {
+            cnt.BI_Deductions.Add(deduction);
+            cnt.SaveChanges();
+        }
+        public List<BI_Deductions> GetDeductions()
+        {
+            return cnt.BI_Deductions.ToList();
+        }
+        public BI_Deductions GetDeductionByID(Int64 deductionID)
+        {
+            return cnt.BI_Deductions.FirstOrDefault(x => x.Deductions_ID == deductionID);
+        }
+        public void SaveDeduction()
+        {
+            cnt.SaveChanges();
+        }
+        public void DeleteDeduction(BI_Deductions deduction)
+        {
+            cnt.BI_Deductions.Remove(deduction);
+            cnt.SaveChanges();
+        }
+        #endregion
     }
 }

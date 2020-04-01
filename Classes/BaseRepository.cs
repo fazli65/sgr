@@ -19,12 +19,7 @@ namespace SGRSalary.Classes
 {
     public class BaseRepository
     {
-        public static long CurrentUserID;
-        public static string CurrentUserName;
-
-        private static ResourceManager rm =
-            new ResourceManager("PTC.ERP.Generator.Domain.Errors", typeof(BaseRepository).Assembly);
-
+        
         protected const int SqlCommandTimeout = 220;
         private static string[][] ColDataTypeGroups;
 
@@ -57,7 +52,6 @@ namespace SGRSalary.Classes
 
         #region Sql Functions
 
-        private static string SelectedDB;
         private static string CurrentConnection;
         private static string CurrentConnectionAttachment;
         static SqlConnection conLocal;
@@ -461,7 +455,7 @@ namespace SGRSalary.Classes
             }
 
             //حذف خطوطی که کلا کامنت شدن
-            string[] lines = command.Split(new[] {Environment.NewLine, "\r\n", "\r", "\n"}, StringSplitOptions.None);
+            string[] lines = command.Split(new[] { Environment.NewLine, "\r\n", "\r", "\n" }, StringSplitOptions.None);
             lines = lines.Where(x => !x.StartsWith("--")).ToArray();
 
             //از وسط خط به بعد کامنت شده 
@@ -480,7 +474,7 @@ namespace SGRSalary.Classes
             command = command.Replace("\r", " ");
             command = command.Replace("\n", " ");
             command = command.Replace("\r\n", " ");
-            var values = command.Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
+            var values = command.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             command = string.Join(" ", values.Where(s => !String.IsNullOrEmpty(s)));
 
             return command;
@@ -491,7 +485,7 @@ namespace SGRSalary.Classes
             conLocal = new SqlConnection(CurrentConnection);
             var ds = new DataSet();
 
-            var cmd = new SqlCommand(command, conLocal) {CommandTimeout = SqlCommandTimeout};
+            var cmd = new SqlCommand(command, conLocal) { CommandTimeout = SqlCommandTimeout };
             try
             {
                 conLocal.Open();
@@ -636,7 +630,7 @@ namespace SGRSalary.Classes
         //WHERE S.Name = {0} AND T.Name = {1}", schemaName, tableName).FirstOrDefault() != null;
         //    }
 
-#endregion
+        #endregion
 
         public static string[][] GetColDataTypeGroups()
         {
@@ -650,7 +644,7 @@ namespace SGRSalary.Classes
             };
 
             ColDataTypeGroups = groups.Select(o =>
-                    o.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries).Select(oo => oo.Trim()).ToArray())
+                    o.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(oo => oo.Trim()).ToArray())
                 .ToArray();
 
             return ColDataTypeGroups;

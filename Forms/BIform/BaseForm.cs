@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace SGRSalary.Forms
 {
@@ -16,5 +11,44 @@ namespace SGRSalary.Forms
         {
             InitializeComponent();
         }
+
+        public void ClearControls()
+        {
+            foreach (Control ctrl in pnlControls.Controls.OfType<Control>())
+            {
+                if (ctrl is TextEdit txtCtl)
+                    txtCtl.Text = string.Empty;
+                if (ctrl is ComboBoxEdit cmCtrl)
+                    cmCtrl.SelectedItem = null ;
+            }
+        }
+
+        public virtual void ConfirmProcess() { }
+        public virtual void NewEntity() {  }
+        public virtual void EditEntity() { }
+        public virtual void DeleteEntity() { }
+
+
+        #region Menus
+        private void TsMenuConfirm_Click(object sender, EventArgs e)
+        {
+            ConfirmProcess();
+        }
+
+        private void TsMenuNew_Click(object sender, EventArgs e)
+        {
+            NewEntity();
+        }
+
+        private void TsMenuEdit_Click(object sender, EventArgs e)
+        {
+            EditEntity();
+        }
+
+        private void TsMenuDelete_Click(object sender, EventArgs e)
+        {
+            DeleteEntity();
+        }
+        #endregion
     }
 }

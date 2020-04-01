@@ -204,6 +204,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SGR_Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Model\SGR_Model.part.cs" />
     <Compile Include="Model\User.cs">
       <DependentUpon>SGR_Model.tt</DependentUpon>
     </Compile>

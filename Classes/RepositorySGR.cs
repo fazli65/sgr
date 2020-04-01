@@ -12,9 +12,6 @@ namespace SGRSalary.Repository
 {
     public class RepositorySgr
     {
-        //    public static string ConStr = "metadata=res://*/Model.SGR_Model.csdl|res://*/Model.SGR_Model.ssdl|res://*/Model.SGR_Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.;initial catalog=SGR;persist security info=True;user id=sa;password=867psqlptc@;MultipleActiveResultSets=True;App=EntityFramework&quot;\" providerName=\"System.Data.EntityClient";
-        //    protected readonly ObjectContext context=new ObjectContext(ConStr);
-
         SGR_SALARYEntities cnt = new SGR_SALARYEntities();
       
         #region BI_Bank

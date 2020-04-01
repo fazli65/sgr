@@ -1,6 +1,7 @@
 ﻿using SGRSalary.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.Entity.Core.Objects;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,13 @@ using SGRSalary.Classes;
 
 namespace SGRSalary.Repository
 {
-
-    public class RepositorySGR : BaseRepository
+    public class RepositorySgr
     {
-        protected readonly ObjectContext context;
-        SGR_SALARYEntities cnt = new SGR_SALARYEntities();
+        //    public static string ConStr = "metadata=res://*/Model.SGR_Model.csdl|res://*/Model.SGR_Model.ssdl|res://*/Model.SGR_Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=.;initial catalog=SGR;persist security info=True;user id=sa;password=867psqlptc@;MultipleActiveResultSets=True;App=EntityFramework&quot;\" providerName=\"System.Data.EntityClient";
+        //    protected readonly ObjectContext context=new ObjectContext(ConStr);
 
+        SGR_SALARYEntities cnt = new SGR_SALARYEntities();
+      
         #region BI_Bank
         public void AddBank(BI_Bank bank)
         {
@@ -78,7 +80,7 @@ namespace SGRSalary.Repository
                             inner join BI_Company com on per.Company_ID=com.Company_ID
                             inner join BI_Project pro  on per.Project_ID=pro.Project_ID
                             inner join BI_City cit on cit.City_ID=per.City_ID";
-            return cnt.BI_Personel.ToList();
+           return cnt.Database.SqlQuery<BI_Personel>(cmd).ToList();
         }
         public BI_Personel GetPersonsByID(Int64 personID)
         {

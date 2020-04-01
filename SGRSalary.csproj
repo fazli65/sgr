@@ -78,12 +78,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\BaseRepository.cs" />
     <Compile Include="Classes\ExcelOprations.cs" />
     <Compile Include="Classes\Extention.cs" />
-    <Compile Include="Classes\IRepository.cs" />
-    <Compile Include="Classes\Repository.cs" />
-    <Compile Include="Classes\RepositorySGR.cs" />
+    <Compile Include="Classes\RepositorySgr.cs" />
     <Compile Include="Forms\BIform\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>

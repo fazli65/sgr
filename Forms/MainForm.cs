@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SGRSalary.Model;
+using SGRSalary.Repository;
 
 namespace SGRSalary.Forms
 {
@@ -20,9 +21,8 @@ namespace SGRSalary.Forms
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //Repository.Repository repo = new Repository.Repository();
-            //User u = new User() { Name = "z", Family = "m" };
-            //repo.AddUser(u);
+            RepositorySgr repo = new RepositorySgr();
+            var p = repo.GetPersons();
         }
 
     }

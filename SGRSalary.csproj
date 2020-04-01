@@ -298,6 +298,10 @@
       <DependentUpon>SGR_Model.edmx</DependentUpon>
       <LastGenOutput>SGR_Model.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\check.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add2.png" />
     <None Include="Resources\company2.png" />
     <None Include="Resources\company.png" />
   </ItemGroup>

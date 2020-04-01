@@ -58,6 +58,7 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -101,86 +102,86 @@
             // شرکتToolStripMenuItem
             // 
             this.شرکتToolStripMenuItem.Name = "شرکتToolStripMenuItem";
-            this.شرکتToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.شرکتToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.شرکتToolStripMenuItem.Text = "شرکت";
             this.شرکتToolStripMenuItem.Click += new System.EventHandler(this.شرکتToolStripMenuItem_Click);
             // 
             // پروژهToolStripMenuItem
             // 
             this.پروژهToolStripMenuItem.Name = "پروژهToolStripMenuItem";
-            this.پروژهToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.پروژهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.پروژهToolStripMenuItem.Text = "پروژه";
             // 
             // پرسنلToolStripMenuItem
             // 
             this.پرسنلToolStripMenuItem.Name = "پرسنلToolStripMenuItem";
-            this.پرسنلToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.پرسنلToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.پرسنلToolStripMenuItem.Text = "پرسنل";
             // 
             // نوعبازاریابیToolStripMenuItem
             // 
             this.نوعبازاریابیToolStripMenuItem.Name = "نوعبازاریابیToolStripMenuItem";
-            this.نوعبازاریابیToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.نوعبازاریابیToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.نوعبازاریابیToolStripMenuItem.Text = "نوع بازاریابی";
             // 
             // وضعیتToolStripMenuItem
             // 
             this.وضعیتToolStripMenuItem.Name = "وضعیتToolStripMenuItem";
-            this.وضعیتToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.وضعیتToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.وضعیتToolStripMenuItem.Text = "وضعیت";
             // 
             // بانکToolStripMenuItem
             // 
             this.بانکToolStripMenuItem.Name = "بانکToolStripMenuItem";
-            this.بانکToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.بانکToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.بانکToolStripMenuItem.Text = "بانک";
             // 
             // فاصلهToolStripMenuItem
             // 
             this.فاصلهToolStripMenuItem.Name = "فاصلهToolStripMenuItem";
-            this.فاصلهToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.فاصلهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.فاصلهToolStripMenuItem.Text = "مقیاس محدوده";
             // 
             // صنفToolStripMenuItem
             // 
             this.صنفToolStripMenuItem.Name = "صنفToolStripMenuItem";
-            this.صنفToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.صنفToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.صنفToolStripMenuItem.Text = "صنف";
             // 
             // مسئولمنطقهToolStripMenuItem
             // 
             this.مسئولمنطقهToolStripMenuItem.Name = "مسئولمنطقهToolStripMenuItem";
-            this.مسئولمنطقهToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.مسئولمنطقهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.مسئولمنطقهToolStripMenuItem.Text = "مسئول منطقه";
             // 
             // نامتجهیزاتToolStripMenuItem
             // 
             this.نامتجهیزاتToolStripMenuItem.Name = "نامتجهیزاتToolStripMenuItem";
-            this.نامتجهیزاتToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.نامتجهیزاتToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.نامتجهیزاتToolStripMenuItem.Text = "نام تجهیزات";
             // 
             // نوعتکلیفیToolStripMenuItem
             // 
             this.نوعتکلیفیToolStripMenuItem.Name = "نوعتکلیفیToolStripMenuItem";
-            this.نوعتکلیفیToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.نوعتکلیفیToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.نوعتکلیفیToolStripMenuItem.Text = "نوع تکلیفی";
             // 
             // مدلدستگاهToolStripMenuItem
             // 
             this.مدلدستگاهToolStripMenuItem.Name = "مدلدستگاهToolStripMenuItem";
-            this.مدلدستگاهToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.مدلدستگاهToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.مدلدستگاهToolStripMenuItem.Text = "مدل دستگاه";
             // 
             // نوعکسوراتToolStripMenuItem
             // 
             this.نوعکسوراتToolStripMenuItem.Name = "نوعکسوراتToolStripMenuItem";
-            this.نوعکسوراتToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.نوعکسوراتToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.نوعکسوراتToolStripMenuItem.Text = "نوع کسورات";
             // 
             // شهرToolStripMenuItem
             // 
             this.شهرToolStripMenuItem.Name = "شهرToolStripMenuItem";
-            this.شهرToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
+            this.شهرToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.شهرToolStripMenuItem.Text = "شهر";
             // 
             // عملیاتToolStripMenuItem
@@ -248,19 +249,21 @@
             this.ribbonControl1.ExpandCollapseItem,
             this.ribbonControl1.SearchEditItem,
             this.btnCompany,
-            this.barButtonItem2});
+            this.barButtonItem2,
+            this.barButtonItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 3;
+            this.ribbonControl1.MaxItemId = 4;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1067, 176);
+            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2019;
+            this.ribbonControl1.Size = new System.Drawing.Size(1067, 191);
             // 
             // btnCompany
             // 
             this.btnCompany.Caption = "شرکت";
             this.btnCompany.Id = 1;
-            this.btnCompany.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.btnCompany.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCompany.ImageOptions.SvgImage")));
             this.btnCompany.Name = "btnCompany";
             this.btnCompany.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnCompany_ItemClick);
             // 
@@ -268,12 +271,15 @@
             // 
             this.barButtonItem2.Caption = "پروژه";
             this.barButtonItem2.Id = 2;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
             this.barButtonItem2.Name = "barButtonItem2";
             // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
+            this.ribbonPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.ImageOptions.Image")));
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "اطلاعات پایه";
             // 
@@ -281,8 +287,17 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnCompany);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup1.ItemsLayout = DevExpress.XtraBars.Ribbon.RibbonPageGroupItemsLayout.OneRow;
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "پرسنل";
+            this.barButtonItem1.Id = 3;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // MainForm
             // 
@@ -295,7 +310,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Text = "MainForm";
+            this.ShowIcon = false;
+            this.Text = "حقوق دستمزد";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -336,5 +352,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }

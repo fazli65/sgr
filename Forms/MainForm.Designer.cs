@@ -104,7 +104,6 @@
             this.شرکتToolStripMenuItem.Name = "شرکتToolStripMenuItem";
             this.شرکتToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.شرکتToolStripMenuItem.Text = "شرکت";
-            this.شرکتToolStripMenuItem.Click += new System.EventHandler(this.شرکتToolStripMenuItem_Click);
             // 
             // پروژهToolStripMenuItem
             // 
@@ -218,7 +217,6 @@
             this.pMToolStripMenuItem.Name = "pMToolStripMenuItem";
             this.pMToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.pMToolStripMenuItem.Text = "ورود اطلاعات اولیه";
-            this.pMToolStripMenuItem.Click += new System.EventHandler(this.pMToolStripMenuItem_Click);
             // 
             // گزارشاتToolStripMenuItem
             // 
@@ -234,7 +232,6 @@
             this.فیشحقوقیToolStripMenuItem.Name = "فیشحقوقیToolStripMenuItem";
             this.فیشحقوقیToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.فیشحقوقیToolStripMenuItem.Text = "فیش حقوق";
-            this.فیشحقوقیToolStripMenuItem.Click += new System.EventHandler(this.فیشحقوقیToolStripMenuItem_Click);
             // 
             // لیستحقوقیToolStripMenuItem
             // 
@@ -265,7 +262,6 @@
             this.btnCompany.Id = 1;
             this.btnCompany.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCompany.ImageOptions.SvgImage")));
             this.btnCompany.Name = "btnCompany";
-            this.btnCompany.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnCompany_ItemClick);
             // 
             // barButtonItem2
             // 
